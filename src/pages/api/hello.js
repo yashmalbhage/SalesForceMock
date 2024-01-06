@@ -1,8 +1,10 @@
-const connectDb = require('./utilis/ConnectDb')
 import { createRouter } from 'next-connect'
 import Schedule from './models/schedule'
 import nc from 'next-connect'
 import mongoose from 'mongoose'
+import connectDb from './utilis/ConnectDb'
+import Schedule from './models/schedule'
+
 connectDb()
 const router = createRouter()
 router.post(async (req, res) => {

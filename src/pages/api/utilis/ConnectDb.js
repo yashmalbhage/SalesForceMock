@@ -1,17 +1,17 @@
-const mongoose = require('mongoose')
-import nextConnect from 'next-connect'
+// ConnectDb.ts
+import mongoose from 'mongoose'
 
-async function connectDB() {
+async function connectDB(): Promise<void> {
   try {
-    const MONGO_URL = 'mongodb+srv://yashmalbhage1:nCQNU42B9n5sAjXu@cluster0.hw4lrkr.mongodb.net/'
+    const MONGO_URL = 'mongodb+srv://yashmalbhage1:nCQNU42B9n5sAjXu@cluster0.hw4lrkr.mongodb.net/your-database-name'
     await mongoose.connect(MONGO_URL, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     })
-    console.log('connected  to mongo ')
+    console.log('Connected to MongoDB')
   } catch (error) {
-    console.log(error)
+    console.error('Error connecting to MongoDB:', error)
   }
 }
 
-module.exports = connectDB
+export default connectDB

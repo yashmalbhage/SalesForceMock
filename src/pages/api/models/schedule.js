@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose'
 
 const scheduleSchema = mongoose.Schema({
   userId: {
@@ -32,8 +32,7 @@ const scheduleSchema = mongoose.Schema({
   },
 })
 
-mongoose.models = {}
-
-const Schedule = mongoose.models.scheduleSchema || mongoose.model('Schedule', scheduleSchema)
+// Use 'Schedule' directly instead of assigning it to mongoose.models
+const Schedule = mongoose.model('Schedule', scheduleSchema)
 
 export default Schedule
