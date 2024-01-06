@@ -18,11 +18,10 @@ const InterviewForm = () => {
     let userEmail: string;
 
     if (typeof window !== 'undefined') {
-        userName = localStorage.getItem('name');
-        userId = localStorage.getItem('uid');
-        userEmail = localStorage.getItem('email');
+        userName = localStorage.getItem('name') || '';
+        userId = localStorage.getItem('uid') || '';
+        userEmail = localStorage.getItem('email') || '';
     }
-
     const theme: any = createTheme({
         palette: {
             primary: {
