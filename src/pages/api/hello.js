@@ -1,5 +1,4 @@
 import { createRouter } from 'next-connect'
-import Schedule from './models/schedule'
 import nc from 'next-connect'
 import mongoose from 'mongoose'
 import connectDb from './utilis/ConnectDb'
