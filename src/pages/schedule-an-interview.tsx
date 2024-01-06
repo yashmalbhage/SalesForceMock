@@ -46,7 +46,7 @@ const InterviewForm = () => {
         setName(event.target.value);
     };
 
-    const handlePhoneNoChange = (event) => {
+    const handlePhoneNoChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPhoneNo(event.target.value);
     };
 
