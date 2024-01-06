@@ -52,7 +52,7 @@ const SignUp = () => {
 
             await createUserWithEmailAndPassword(auth, email, password)
                 .then((data) => {
-                    const userEmail = data.user.email || ''; /
+                    const userEmail = data.user.email || '';
                     // Signed in
                     // console.log(users);
                     // alert("Hello " + users.displayName)
