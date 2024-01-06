@@ -40,9 +40,7 @@ const InterviewForm = () => {
     const [time, setTime] = useState('');
     const [email, setEmail] = useState(userEmail);
     const [value, setValue] = useState(0);
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
+
 
     const handleNameChange = (event) => {
         setName(event.target.value);
