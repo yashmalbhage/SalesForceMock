@@ -6,6 +6,7 @@ import Tab from '@mui/material/Tab';
 import Link from 'next/link';
 import UpcomingInterviews from './upcomin-inter';
 import Navbar from './newnav';
+import { SelectChangeEvent } from '@mui/material/Select';
 import { Footer } from '@/components/footer';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Grid } from '@mui/material';
 
@@ -50,9 +51,10 @@ const InterviewForm = () => {
         setPhoneNo(event.target.value);
     };
 
-    const handleExperienceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleExperienceChange = (event: SelectChangeEvent<string>) => {
         setExperience(event.target.value);
     };
+
 
     const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setDate(event.target.value);
@@ -136,14 +138,14 @@ const InterviewForm = () => {
                                 <FormControl fullWidth margin="normal">
                                     <InputLabel>Interview for</InputLabel>
                                     <Select value={experience} onChange={handleExperienceChange} required>
-                                        <MenuItem value="Beginner">Salesforce developer (2 years exp)</MenuItem>
-                                        <MenuItem value="Intermediate">Salesforce developer (3-5) </MenuItem>
-                                        <MenuItem value="Expert">Salesforce developer (5+)</MenuItem>
-                                        <MenuItem value="Expert">Lead developer</MenuItem>
-                                        <MenuItem value="Expert">Salesforce architect</MenuItem>
-                                        <MenuItem value="Expert">Vlocity developer</MenuItem>
-                                        <MenuItem value="Expert">Omnistudio devloper</MenuItem>
-                                        <MenuItem value="Expert">Salesforce tester</MenuItem>
+                                        <MenuItem value="Salesforce developer (2 years exp)">Salesforce developer (2 years exp)</MenuItem>
+                                        <MenuItem value="Salesforce developer (3-5)">Salesforce developer (3-5) </MenuItem>
+                                        <MenuItem value="Salesforce developer (5+)">Salesforce developer (5+)</MenuItem>
+                                        <MenuItem value="Lead developer">Lead developer</MenuItem>
+                                        <MenuItem value="Salesforce architect">Salesforce architect</MenuItem>
+                                        <MenuItem value="Vlocity developer">Vlocity developer</MenuItem>
+                                        <MenuItem value="Omnistudio devloper">Omnistudio devloper</MenuItem>
+                                        <MenuItem value="Salesforce tester">Salesforce tester</MenuItem>
 
 
                                     </Select>
