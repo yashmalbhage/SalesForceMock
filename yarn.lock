@@ -872,6 +872,14 @@
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity "sha1-7ihweulOEdK4J7y+UnC86n8+ce4= sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ=="
 
+"@types/material-ui@^0.21.16":
+  version "0.21.16"
+  resolved "https://registry.yarnpkg.com/@types/material-ui/-/material-ui-0.21.16.tgz#19697ce83af2dc03ed25321e7d2158f2d6d57125"
+  integrity sha512-US8P5IsLguspYFDtkG4097KZDyqz/GqBm0uftcZ2h2fTzyzLqJuFk8BliEQ9VS3EviRDJaB6l29gps3hkCTm7Q==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-addons-linked-state-mixin" "*"
+
 "@types/node@*", "@types/node@17.0.25", "@types/node@>=12.12.47", "@types/node@>=13.7.0":
   version "17.0.25"
   resolved "https://registry.npmjs.org/@types/node/-/node-17.0.25.tgz"
@@ -886,6 +894,13 @@
   version "15.7.5"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
+
+"@types/react-addons-linked-state-mixin@*":
+  version "0.14.26"
+  resolved "https://registry.yarnpkg.com/@types/react-addons-linked-state-mixin/-/react-addons-linked-state-mixin-0.14.26.tgz#90f78df258366faf11da3a471fad797f222861f9"
+  integrity sha512-6bs9FtqpwctZcuAR+G8HkZlRedYspCdn14j9w0QP/czAAm3gena4F94+yg4FmfW7+RSK1r6WiUegTFLUIIaW3Q==
+  dependencies:
+    "@types/react" "*"
 
 "@types/react-dom@18.0.2":
   version "18.0.2"

@@ -87,7 +87,7 @@ const Login = () => {
                         Log in to <Logo />
                     </Typography>
                     <form>
-                        <Grid item xs={12} align="center">
+                        <Grid item xs={12}>
                             <Button style={{ width: 200 }} onClick={signing}  >
                                 <img src="/images/google-removebg-preview.png" alt="Headline curve" style={{ width: 200 }} />
 
