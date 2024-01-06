@@ -42,7 +42,7 @@ const InterviewForm = () => {
     const [value, setValue] = useState(0);
 
 
-    const handleNameChange = (event) => {
+    const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setName(event.target.value);
     };
 
@@ -50,22 +50,22 @@ const InterviewForm = () => {
         setPhoneNo(event.target.value);
     };
 
-    const handleExperienceChange = (event) => {
+    const handleExperienceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setExperience(event.target.value);
     };
 
-    const handleDateChange = (event) => {
+    const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setDate(event.target.value);
     };
 
-    const handleTimeChange = (event) => {
+    const handleTimeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setTime(event.target.value);
     };
-    const handleEmaileChange = (event) => {
+    const handleEmaileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(event.target.value);
     };
 
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: React.ChangeEvent<HTMLInputElement>) => {
         event.preventDefault();
         // Handle form submission
         // console.log({ name, phoneNo, experience, date, time });
