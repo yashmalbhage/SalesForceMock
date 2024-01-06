@@ -65,7 +65,7 @@ const InterviewForm = () => {
         setEmail(event.target.value);
     };
 
-    const handleSubmit = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (event) => {
         event.preventDefault();
         // Handle form submission
         // console.log({ name, phoneNo, experience, date, time });
