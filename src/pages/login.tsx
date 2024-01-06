@@ -4,7 +4,6 @@ import { Logo } from '@/components/logo';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, provider } from '../firebaseConfig'
 
-import { NavLink, useNavigate } from "react-router-dom";
 import { signInWithPopup } from "firebase/auth";
 import { useRouter } from 'next/router';
 const Login = () => {
