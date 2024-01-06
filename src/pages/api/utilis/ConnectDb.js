@@ -1,7 +1,7 @@
 // ConnectDb.ts
 import mongoose from 'mongoose'
 
-async function connectDB(): Promise<void> {
+async function connectDB() {
   try {
     const MONGO_URL = 'mongodb+srv://yashmalbhage1:nCQNU42B9n5sAjXu@cluster0.hw4lrkr.mongodb.net/your-database-name'
     await mongoose.connect(MONGO_URL, {
