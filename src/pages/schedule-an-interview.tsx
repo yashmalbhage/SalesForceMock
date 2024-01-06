@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Link from 'next/link';
-import UpcomingInterviews from './upcomin-inter';
+// import UpcomingInterviews from './upcomin-inter';
 import Navbar from './newnav';
 import { SelectChangeEvent } from '@mui/material/Select';
 import { Footer } from '@/components/footer';
