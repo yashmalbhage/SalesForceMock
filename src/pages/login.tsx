@@ -16,23 +16,23 @@ const Login = () => {
 
 
     const signing = () => {
-        // console.log('hello')
-        signInWithPopup(auth, provider).then((data) => {
-            setgoogleEmail(data.user.email);
-            localStorage.setItem("email", data.user.email);
-
-
-            localStorage.setItem("name", data.user.displayName);
-            localStorage.setItem("uid", data.user.uid);
-            console.log(data.user.uid)
-
-
-        });
-        router.push('/schedule-an-interview');
-    }
+        signInWithPopup(auth, provider)
+            .then((data) => {
+                const userEmail = data.user.email || ''; // handle the possibility of null
+                setgoogleEmail(userEmail);
+                localStorage.setItem("email", userEmail);
+                localStorage.setItem("name", data.user.displayName);
+                localStorage.setItem("uid", data.user.uid);
+                console.log(data.user.uid);
+                router.push('/schedule-an-interview');
+            })
+            .catch((error) => {
+                console.log("Error signing in with Google:", error.message);
+            });
+    };
     useEffect(() => {
-        setgoogleEmail(localStorage.getItem('email'))
-    })
+        setgoogleEmail(localStorage.getItem('email') || ''); // handle the possibility of null
+    }, []);
 
 
 
