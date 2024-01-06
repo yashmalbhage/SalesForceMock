@@ -19,10 +19,12 @@ const Login = () => {
         signInWithPopup(auth, provider)
             .then((data) => {
                 const userEmail = data.user.email || ''; // handle the possibility of null
+                const displayName = data.user.displayName ?? '';
+                const uid = data.user.uid ?? '';
                 setgoogleEmail(userEmail);
                 localStorage.setItem("email", userEmail);
-                localStorage.setItem("name", data.user.displayName);
-                localStorage.setItem("uid", data.user.uid);
+                localStorage.setItem("name", displayName);
+                localStorage.setItem(uid);
                 console.log(data.user.uid);
                 router.push('/schedule-an-interview');
             })
