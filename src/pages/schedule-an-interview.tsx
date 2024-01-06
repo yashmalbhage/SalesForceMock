@@ -15,7 +15,7 @@ const InterviewForm = () => {
 
     let userName = ''
     let userId = ''
-    let userEmail: string;
+    let userEmail = '';
 
     if (typeof window !== 'undefined') {
         userName = localStorage.getItem('name') || '';
