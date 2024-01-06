@@ -52,11 +52,12 @@ const SignUp = () => {
 
             await createUserWithEmailAndPassword(auth, email, password)
                 .then((data) => {
+                    const userEmail = data.user.email || ''; /
                     // Signed in
-                    console.log(users);
+                    // console.log(users);
                     // alert("Hello " + users.displayName)
                     alert("Sign up successful")
-                    localStorage.setItem("email", data.user.email);
+                    localStorage.setItem("email", userEmail);
                     localStorage.setItem("uid", data.user.uid);
 
 
