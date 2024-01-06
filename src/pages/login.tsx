@@ -24,7 +24,7 @@ const Login = () => {
                 setgoogleEmail(userEmail);
                 localStorage.setItem("email", userEmail);
                 localStorage.setItem("name", displayName);
-                localStorage.setItem(uid);
+                localStorage.setItem('uid', uid);
                 console.log(data.user.uid);
                 router.push('/schedule-an-interview');
             })
